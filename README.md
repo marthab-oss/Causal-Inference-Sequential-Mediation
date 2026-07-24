@@ -2,7 +2,7 @@
 
 ## Repository Link
 
-https://github.com/marthab-oss/Causal-Inference-Sequential-Mediation/blob/main
+https://github.com/marthab-oss/Modeling-Coping-Strategy-Improvement-via-Causal-Inference
 
 ## Description
 
