@@ -33,7 +33,7 @@ all features have the same data type: int64
 
 ## Exploratory Data Analysis
 
-The exploratory data analysis is conducted in the [exploratory_data_analysis.ipynb](exploratory_data_analysis.ipynb) notebook, which includes:
+The exploratory data analysis is conducted in the [exploratory_data_analysis.ipynb](exploratory_data_analysis.ipynb) notebook. The analysis includes:
 
 - Data loading and initial inspection
 - Statistical summaries and distributions:
