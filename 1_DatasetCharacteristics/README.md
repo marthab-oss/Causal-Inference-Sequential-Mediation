@@ -33,6 +33,7 @@ all features have the same data type: int64
 
 ## Exploratory Data Analysis
 
+
 The exploratory data analysis is conducted in the [exploratory_data_analysis.ipynb](exploratory_data_analysis.ipynb) notebook. The analysis includes:
 
 - Data loading and initial inspection
@@ -45,5 +46,9 @@ The exploratory data analysis is conducted in the [exploratory_data_analysis.ipy
 - Data visualization and insights, like outliners:
   <img width="800" height="400" alt="Boxplot_for_outliners" src="https://github.com/user-attachments/assets/56c2a0f2-8773-4fb9-86f3-79e327bb0d1f" />
 
-- Data quality assessment:
-- Missing value analysis: no missing values 
+- Data quality assessment for data quality, potential biases, and causal analysis challenges:
+- Missing value analysis: no missing values detected in dataset
+- Selection Bias: The treated group (`educational_intervention = 1`) shows higher baseline values compared to the control group. This is indicated by standardized mean differences (SMD) (particularly for: 'social_support_enhancement`: SMD = 0.748 and `mental_health_score`: SMD = 0.575). These differences suggest potential selection bias, as treatment assignment is not completely independent of observed characteristics.
+- Predictive Influence: Feature importance analysis shows that `social_support_enhancement` has the strongest predictive influence on `coping_strategy_improvement`. It dominates both: ElasticNetCV regression (coefficient β = 0.28) and Gradient Boosting model (feature importance = 0.82)
+- Heterogeneous Treatment Effects: The estimated Conditional Average Treatment Effect (CATE) distributions from T-Learner and Random Forest T-Learner range approximately between -3 and +2. This indicates that the effect of the educational intervention varies across individuals, suggesting heterogeneous treatment effects.
+- Validation: The `random_noise` feature showed approximately zero predictive influence, confirming that the models are not relying on artificial noise variables.
