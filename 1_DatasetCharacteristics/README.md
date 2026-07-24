@@ -5,31 +5,31 @@
 ## Dataset Information
 
 ### Dataset Source
-- **Dataset Link:** [https://www.kaggle.com/datasets/cloverchen/causalpitfalls-benchmark-causal-data-neurips-2025]
-- **Dataset Owner/Contact:** Dataset from Kaggle, no author named
+- **Dataset Link:** https://www.kaggle.com/datasets/cloverchen/causalpitfalls-benchmark-causal-data-neurips-2025
+- **Dataset Owner/Contact:** Dataset from Kaggle, no author provided
 
 ### Dataset Characteristics
 - **Number of Observations:** 500
 - **Number of Features:** 8
+- **Data Type:** all variables are numerical (int64)
 
 ### Target Variable/Label
 - **Label Name:** coping_strategy_improvement
 - **Label Type:** Regression
-- **Label Description:** ability to adapt to problems or new environment, and is dependent on the socio- economic environment
+- **Label Description:** The target variable represents an individual's ability to adapt to problems or new environments. It is influenced by social, educational, and health-related characteristics.
 - **Label Values:** range: 0.18 - 10.80
-- **Label Distribution:** mostly concentrated between values of 4 and eight, histogramm close to a gausian curve. Same applies to other features, except the first one, which only gives 0 or 1 for educational intervention yes or no.
+- **Label Distribution:** The target variable follows an approximately Gaussian distribution, with most observations within the range of of 4 and 8
 
 ### Feature Description
 all features have the same data type: int64
 
-- **Feature 1 (educational_intervention):** extra support for students, range: 0-1
-- **Feature 2 (coping_strategy_improvement):** ability to adapt to new environment, range: 0.18-10.80
-- **Feature 3 (social_support_enhancement):** governmental support for family, range: 0.49 - 16.45
-- **Feature 4 (mental_health_score):** how stable and resilient the psychological state is, range: 66.98 - 238.63
-- **Feature 5 (socioeconomic_status):** the purchase power linked to social status in society, range: 3.24 - 3.85 
-- **Feature 6 (school_quality_score):** status of attended school compared to (in amount of cancelled lessons, relationship between pupil and teacher, motivation, budget of school,..) other schools, range: 53.22 - 112.61
-- **Feature 7 (baseline_cognitive_score):** overall brain function (logical thinking, memory, attention, processing speed, ..), range: 59.98 - 156.02
-- **Feature 8 (random_noise):** values not significant for dataset, range: -2.93 - 3.24
+- **Feature 1 (educational_intervention):** Indicates whether additional educational support was provided (binary treatment variable). Range: 0-1
+- **Feature 2 (social_support_enhancement):** Represents additional governmental or social support available to families. Range: 0.49 - 16.45
+- **Feature 3 (mental_health_score):** Measures psychological stability and resilience. Range: 66.98 - 238.63
+- **Feature 4 (socioeconomic_status):** Represents purchasing power related to social status. Range: 3.24 - 3.85 
+- **Feature 5 (school_quality_score):** Measures school quality based on factors such as cancelled lessons, student-teacher relationships, motivation, and available resources. Range: 53.22 - 112.61
+- **Feature 6 (baseline_cognitive_score):** Represents cognitive abilities, including logical reasoning, memory, attention, and processing speed. Range: 59.98 - 156.02
+- **Feature 7 (random_noise):** Randomly generated variable without meaningful influence on the outcome. Range: -2.93 - 3.24
 
 ## Exploratory Data Analysis
 
